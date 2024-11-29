@@ -1,0 +1,59 @@
+
+.ej1{
+    background-color: lightblue;
+    margin: 20px;
+    padding: 15px;
+}
+.ej2{
+    background-image: url(../img/hornero_nido.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ej3{
+    border-radius: 10px;
+    border: 2px solid red;
+}
+.ej4{
+    font-weight: bold;
+    border: 2px solid;
+    padding: 6px;
+}
+.ej5{
+    background-color: yellow;
+    text-align: center;
+}
+.ej6{
+    border: double 5px;
+    border-color: blueviolet;
+    background-color: gold;
+    margin: 40px;
+}
+.ej7{
+    background-image: url(../img/OIP.jpeg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.ej8{
+    background-image: url(../img/uade-logo.png);
+    background-size: 50%;
+    background-repeat: repeat-y;
+}
+.ej9{
+    background-image: url(../img/Lateralus.jpg);
+    background-size: 10%,100%;
+    background-repeat: repeat-y;
+    background-position: right;
+    background-color: lightgreen;
+}
+.butej9{
+    background-color: red;
+    margin: 5px 0px 0px 5px;
+}
+.ej10{
+    display: inline-block;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 25px;
+    border-radius: 5px;
+    border: 3px dotted green;
+}

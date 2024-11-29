@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guía JS</title>
+    <script>
+        var primerNombre = "Maxi";
+        var apellido = "Biancatto";
+
+        function mostrarSaludo() {
+            alert("Hola, " + primerNombre + " " + apellido);
+        }
+
+        function calcularRectangulo() {
+            var lado1 = parseFloat(prompt("Ingresa el primer lado del rectángulo:"));
+            var lado2 = parseFloat(prompt("Ingresa el segundo lado del rectángulo:"));
+            var perimetro = 2 * (lado1 + lado2);
+            var area = lado1 * lado2;
+            document.getElementById("perimetro").innerText = "El perímetro del rectángulo es " + perimetro;
+            document.getElementById("area").innerText = "El área del rectángulo es " + area;
+        }
+
+        function tipoTriangulo() {
+            var ladoA = parseFloat(prompt("Ingresa el primer lado del triángulo:"));
+            var ladoB = parseFloat(prompt("Ingresa el segundo lado del triángulo:"));
+            var ladoC = parseFloat(prompt("Ingresa el tercer lado del triángulo:"));
+            var tipo;
+            if (ladoA === ladoB && ladoB === ladoC) {
+                tipo = "equilátero";
+            } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+                tipo = "isósceles";
+            } else {
+                tipo = "escaleno";
+            }
+            document.getElementById("triangulo").innerText = "El triángulo es " + tipo;
+        }
+
+        function encontrarMayorMenor() {
+            var numeros = [];
+            for (var i = 0; i < 5; i++) {
+                numeros.push(parseFloat(prompt("Ingresa un número:")));
+            }
+            var mayor = Math.max(...numeros);
+            var menor = Math.min(...numeros);
+            var lista = document.getElementById("numeros");
+            lista.innerHTML = "<li>El mayor número ingresado es " + mayor + "</li>";
+            lista.innerHTML += "<li>El menor número ingresado es " + menor + "</li>";
+        }
+
+        function adivinarNumero() {
+            var numeroAleatorio = Math.floor(Math.random() * 11);
+            var adivinado = false;
+            while (!adivinado) {
+                var intento = parseFloat(prompt("Adivina el número (entre 0 y 10):"));
+                if (intento === numeroAleatorio) {
+                    alert("¡Felicidades! Adivinaste el número.");
+                    adivinado = true;
+                } else if (intento < numeroAleatorio) {
+                    alert("Tu número ingresado es menor que el número a adivinar.");
+                } else {
+                    alert("Tu número ingresado es mayor que el número a adivinar.");
+                }
+            }
+        }
+
+        function saludar() {
+            var nombre = prompt("¿Cuál es tu nombre?");
+            alert("Hola, " + nombre);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mostrarSaludo()">Mostrar Saludo</button>
+    <button onclick="calcularRectangulo()">Calcular Rectángulo</button>
+    <p id="perimetro"></p>
+    <p id="area"></p>
+    <button onclick="tipoTriangulo()">Tipo de Triángulo</button>
+    <p id="triangulo"></p>
+    <button onclick="encontrarMayorMenor()">Encontrar Mayor y Menor</button>
+    <ul id="numeros"></ul>
+    <button onclick="adivinarNumero()">Adivinar Número</button>
+    <button onclick="saludar()">Saludar</button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.abstract{ 
+    color: red;
+    font-family: sans-serif ;
+}
+.strongred{
+    color:brown
+}
+.lightgreen{
+    color:lightgreen
+}
+.stronggreen{
+    color:green
+}
+.orange{
+    color: rgb(208, 154, 54);
+}
+.strongorange{
+    color:rgb(238, 101, 51)
+}
+.coral{
+    color:rgba(190, 79, 242, 0.642)
+}
+.strongcoral{
+    color:rgb(190, 79,242)
+}
+.pink{
+    color:rgb(255, 86, 255)
+}
+.strongpink{
+    color: palevioletred
+}
+#titulo{
+    color: rgb(17, 74, 187);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight:900;
+    text-align: justify;
+}
+h2{
+    color: rgb(17, 74, 187);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    text-align: justify;
+}
+h3{
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+}
+div p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 11px;
+    text-align: justify;
+}

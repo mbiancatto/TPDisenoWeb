@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .box {
+            width: 30%;
+            background-color: lightgray;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: none;
+            background-color: lightgreen;
+            padding: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 960px) {
+            body {
+                background-color: #333;
+                color: white;
+            }
+        }
+
+        @media (max-width: 600px) {
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (orientation: portrait) {
+            .sidebar {
+                display: none;
+            }
+        }
+
+        @media (orientation: landscape) {
+            .navbar {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 80%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .box {
+                margin: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1, h2 {
+                font-family: Verdana, sans-serif;
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Actividad Media Queries</h1>
+        <nav class="navbar">
+            <p>Barra de navegación visible en modo horizontal</p>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <h2>Barra lateral</h2>
+        <p>Contenido oculto en orientación vertical</p>
+    </aside>
+
+    <main>
+        <div class="container">
+            <div class="box">
+                <h2>Sección 1</h2>
+                <p>Contenido de la sección 1.</p>
+            </div>
+            <div class="box">
+                <h2>Sección 2</h2>
+                <p>Contenido de la sección 2.</p>
+            </div>
+            <div class="box">
+                <h2>Sección 3</h2>
+                <p>Contenido de la sección 3.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Imágenes</h2>
+        <img src="./Media/IMG_800x400.jpg" alt="Imagen de ejemplo">
+    </footer>
+</body>
+
+</html>

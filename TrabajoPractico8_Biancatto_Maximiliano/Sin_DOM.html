@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guía JS</title>
+    <script>
+        var primerNombre = "Maxi";
+        var apellido = "Biancatto";
+    </script>
+</head>
+<body>
+    <script>
+        alert("Hola, " + primerNombre + " " + apellido);
+    </script>
+    <script>
+        var lado1 = prompt("Ingresa el primer lado del rectángulo:");
+        var lado2 = prompt("Ingresa el segundo lado del rectángulo:");
+        var perimetro = 2 * (parseFloat(lado1) + parseFloat(lado2));
+        var area = parseFloat(lado1) * parseFloat(lado2);
+        document.write("<p>El perímetro del rectángulo es " + perimetro + "</p>");
+        document.write("<p>El área del rectángulo es " + area + "</p>");
+    </script>
+    <script>
+        var ladoA = prompt("Ingresa el primer lado del triángulo:");
+        var ladoB = prompt("Ingresa el segundo lado del triángulo:");
+        var ladoC = prompt("Ingresa el tercer lado del triángulo:");
+        if (ladoA === ladoB && ladoB === ladoC) {
+            document.write("<p>El triángulo es equilátero</p>");
+        } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+            document.write("<p>El triángulo es isósceles</p>");
+        } else {
+            document.write("<p>El triángulo es escaleno</p>");
+        }
+    </script>
+    <script>
+        var numeros = [];
+        for (var i = 0; i < 5; i++) {
+            numeros.push(parseFloat(prompt("Ingresa un número:")));
+        }
+        var mayor = Math.max(...numeros);
+        var menor = Math.min(...numeros);
+        document.write("<ul>");
+        document.write("<li>El mayor número ingresado es " + mayor + "</li>");
+        document.write("<li>El menor número ingresado es " + menor + "</li>");
+        document.write("</ul>");
+    </script>
+    <script>
+        var numeroAleatorio = Math.floor(Math.random() * 11);
+        var adivinado = false;
+        while (!adivinado) {
+            var intento = parseFloat(prompt("Adivina el número (entre 0 y 10):"));
+            if (intento === numeroAleatorio) {
+                alert("¡Felicidades! Adivinaste el número.");
+                adivinado = true;
+            } else if (intento < numeroAleatorio) {
+                alert("Tu número ingresado es menor que el número a adivinar.");
+            } else {
+                alert("Tu número ingresado es mayor que el número a adivinar.");
+            }
+        }
+    </script>
+</body>
+</html>

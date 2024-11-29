@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Artículos para Motos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Vendors/jquery.OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="Vendors/jquery.OwlCarousel2-2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .products, .testimonials, .contact {
+            padding: 2rem 0;
+        }
+        .product, .testimonial {
+            background: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product img, .testimonial img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .owl-carousel .item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .parallax-window {
+            min-height: 400px;
+            background: transparent;
+        }
+        .slider {
+            width: 80%;
+            margin: 100px auto;
+        }
+        .slick-slide {
+            text-align: center;
+            color: #fff;
+            background: #3498db;
+            padding: 40px 0;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 25px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Artículos para Motos</h1>
+        <p>Encuentra los mejores accesorios y repuestos para tu moto</p>
+    </header>
+
+    <div class="container">
+        <!-- Productos Destacados -->
+        <section class="products">
+            <h2>Productos Destacados</h2>
+            <div class="product">
+                <h3>Casco Integral</h3>
+                <p>Protege tu cabeza con este casco integral de alta calidad.</p>
+                <div class="owl-carousel">
+                    <div> <img src="Media/casco_frontal.webp" alt="Casco Integral"> </div>
+                    <div> <img src="Media/casco_frentederecha.webp" alt="Casco Integral"> </div>
+                    <div> <img src="Media/casco_nuca.webp" alt="Casco Integral"> </div>
+                    <div> <img src="Media/Casco_izquierda.webp" alt="Casco Integral"> </div>
+                    <div> <img src="Media/datasheet.webp" alt="Casco Integral"> </div>
+                </div>
+            </div>
+            <div class="product">
+                <h3>Guantes con sensibilidad táctil</h3>
+                <p>Guantes con función táctil, resistentes para una mejor protección y agarre.</p>
+                <div class="owl-carousel">
+                    <div> <img src="Media/Guantes_frente.webp" alt="Guantes Frente"> </div>
+                    <div> <img src="Media/Guantes_enuso.webp" alt="Guantes en uso"> </div>
+                    <div> <img src="Media/Guantes_Estirados.webp" alt="Guantes en tensión"> </div>
+                    <div> <img src="Media/Guantes_palmas.webp" alt="Palmas"> </div>
+                </div>
+            </div>
+            <div class="product">
+                <h3>Campera de Moto</h3>
+                <p>Campera de moto con protección en codos y espalda.</p>
+                <div class="owl-carousel">
+                    <div> <img src="Media/campera.jpg.webp" alt="Campera de Moto"> </div>
+                    <div> <img src="Media/Campera_espalda.webp" alt="Espalda de campera"> </div>
+                    <div> <img src="Media/Tres_Camperas.webp" alt="Multifoco Campera"> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="testimonials">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <p>"Excelente calidad y servicio. Los productos llegaron a tiempo y en perfectas condiciones."</p>
+                <p>- Juan Pérez</p>
+            </div>
+            <div class="testimonial">
+                <p>"Muy satisfecho con mi compra. La chaqueta de moto es muy cómoda y segura."</p>
+                <p>- María López</p>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos a través de WhatsApp:</p>
+            <a href="https://wa.me/1234567890?text=Hola%20me%20gustaría%20más%20información" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Enviar Mensaje
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Tienda de Artículos para Motos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Owl Carousel JS -->
+    <script src="Vendors/jquery.OwlCarousel2-2.3.4/owl.carousel.js"></script>
+    <!-- Parallax.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Owl Carousel
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+
+            // Parallax.js
+            $('.parallax-window').parallax({imageSrc: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'});
+
+            // Slick Slider
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
